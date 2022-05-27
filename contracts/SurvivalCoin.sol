@@ -1,12 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-// import from node_modules @openzeppelin/contracts v4.0
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
-import "hardhat/console.sol";
 
 contract SurvivalCoin is ERC20, Ownable, ReentrancyGuard {
 
@@ -35,8 +32,7 @@ contract SurvivalCoin is ERC20, Ownable, ReentrancyGuard {
     }
 
     function buy() public payable nonReentrant returns (bool success) {
-      require(msg.sender.balance >= msg.value && msg.value != 0 ether, "SurvivalCoin: function buy invalid input");
-      //1 $ROSE for 100 tokens
+      require(msg.value != 0 ether, "SurvivalCoin: function buy invalid input");
       uint256 amount = msg.value * 100;
       _transfer(address(this), _msgSender(), amount);
       return true;
