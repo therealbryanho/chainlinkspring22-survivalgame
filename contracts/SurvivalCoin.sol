@@ -36,7 +36,6 @@ contract SurvivalCoin is ERC20, Ownable, ReentrancyGuard {
 
     function buy() public payable nonReentrant returns (bool success) {
       require(msg.sender.balance >= msg.value && msg.value != 0 ether, "SurvivalCoin: function buy invalid input");
-      //1 $ROSE for 100 tokens
       uint256 amount = msg.value * 100;
       _transfer(address(this), _msgSender(), amount);
       return true;
