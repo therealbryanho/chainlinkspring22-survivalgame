@@ -6,7 +6,7 @@ Name: Survival Game
 Devpost URL: https://devpost.com/software/survivors-game
 
 Smart Contracts on Mumbai
-- coin 0x21c02c830b5A1cDAA0DD384b695afD03e8662C35  https://mumbai.polygonscan.com/address/0x21c02c830b5A1cDAA0DD384b695afD03e8662C35
+- coin 0xBa1a5b1C0A35A142E2acfd122F6fA7EF681E1D20  https://mumbai.polygonscan.com/address/0xBa1a5b1C0A35A142E2acfd122F6fA7EF681E1D20
 - game 0xE5B77B3dcB4b3C6B2Eb163eCa1C3A9fe27c83f21  https://mumbai.polygonscan.com/address/0xE5B77B3dcB4b3C6B2Eb163eCa1C3A9fe27c83f21
 
 Chainlink VRF Subscription
